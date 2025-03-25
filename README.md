@@ -107,39 +107,8 @@ curl -X DELETE http://localhost:5000/api/tasks/12345
 
 ## 🖼️ Screenshots 📸
 
-| 🖥️ Desktop View                                                        | 📱 Mobile View |
-| ----------------------------------------------------------------------- | -------------- |
-| ![taskmanagement app]\(images/Screenshot 2025-03-26 010807.png.png) |                |
-
-
-
-|   |   |
-| - | - |
-
-## 🛠️ Troubleshooting ❗
-
-### ⚡ MongoDB connection issues
-
-```bash
-# Check if MongoDB service is running (Linux/macOS)
-sudo systemctl status mongod
-
-# Start MongoDB service (Linux/macOS)
-sudo systemctl start mongod
-
-# Windows start command 🖥️
-net start MongoDB
-```
-
-### ⚠️ Port conflicts
-
-```bash
-# Find processes using port 5000 🔍
-lsof -i :5000
-
-# Kill process (Linux/macOS) 🛑
-kill -9 <PID>
-```
+![task management app](images/img1.png)
+![tasks list](images/img2.png)
 
 ## 📝 License 📄
 
