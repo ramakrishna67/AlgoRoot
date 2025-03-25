@@ -1,6 +1,5 @@
 # 📝 Task Management Application
 
-![🖥️ Task Manager UI](screenshots/app-preview.png)
 
 A full-stack task management system with a Next.js frontend, Node.js/Express backend, and MongoDB database.
 
@@ -99,8 +98,8 @@ curl -X DELETE http://localhost:5000/api/tasks/12345
 
 | 🖥️ Desktop View | 
 
-| ![Desktop](frontend/public/Screenshot 2025-03-26 010807.png) |
-| ![Desktop](frontend/public/Screenshot 2025-03-26 011139.png) |
+![Desktop](frontend/public/Screenshot 2025-03-26 010807.png) 
+![Desktop](frontend/public/Screenshot 2025-03-26 011139.png)
 
 
 
