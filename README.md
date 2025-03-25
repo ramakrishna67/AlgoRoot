@@ -1,17 +1,20 @@
 # 📝 Task Management Application
 
 
+
 A full-stack task management system with a Next.js frontend, Node.js/Express backend, and MongoDB database.
 
 ## 🚀 Quick Start
 
 ### 🔹 1. Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/task-management-app.git
 cd task-management-app
 ```
 
 ### 🔹 2. Set up backend ⚙️
+
 ```bash
 cd backend
 npm install
@@ -21,6 +24,7 @@ npm run dev
 ```
 
 ### 🔹 3. Set up frontend 🎨 (in new terminal)
+
 ```bash
 cd ../frontend
 npm install
@@ -30,6 +34,7 @@ npm run dev
 ## 🔧 Manual Setup 🛠️
 
 ### 🖥️ Backend Installation
+
 ```bash
 # Navigate to backend folder
 cd backend
@@ -48,6 +53,7 @@ npm run dev
 ```
 
 ### 🎨 Frontend Installation
+
 ```bash
 # Navigate to frontend folder
 cd frontend
@@ -68,6 +74,7 @@ npm run dev
 ## 📚 API Reference 🌐
 
 ### 🔗 Base URL
+
 ```
 http://localhost:5000/api
 ```
@@ -75,34 +82,66 @@ http://localhost:5000/api
 ### 🔹 Endpoints 📌
 
 #### 📥 Get all tasks
+
 ```bash
 curl -X GET http://localhost:5000/api/tasks
 ```
 
 #### ➕ Create a task
+
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{"title":"My Task"}' http://localhost:5000/api/tasks
 ```
 
 #### ✅ Update a task
+
 ```bash
 curl -X PATCH -H "Content-Type: application/json" -d '{"completed":true}' http://localhost:5000/api/tasks/12345
 ```
 
 #### ❌ Delete a task
+
 ```bash
 curl -X DELETE http://localhost:5000/api/tasks/12345
 ```
 
 ## 🖼️ Screenshots 📸
 
-| 🖥️ Desktop View | 
+| 🖥️ Desktop View                                                        | 📱 Mobile View |
+| ----------------------------------------------------------------------- | -------------- |
+| ![taskmanagement app]\(images/Screenshot 2025-03-26 010807.png.png) |                |
 
-![Desktop](frontend/public/Screenshot 2025-03-26 010807.png) 
-![Desktop](frontend/public/Screenshot 2025-03-26 011139.png)
 
 
+|   |   |
+| - | - |
+
+## 🛠️ Troubleshooting ❗
+
+### ⚡ MongoDB connection issues
+
+```bash
+# Check if MongoDB service is running (Linux/macOS)
+sudo systemctl status mongod
+
+# Start MongoDB service (Linux/macOS)
+sudo systemctl start mongod
+
+# Windows start command 🖥️
+net start MongoDB
+```
+
+### ⚠️ Port conflicts
+
+```bash
+# Find processes using port 5000 🔍
+lsof -i :5000
+
+# Kill process (Linux/macOS) 🛑
+kill -9 <PID>
+```
 
 ## 📝 License 📄
+
 MIT
 
