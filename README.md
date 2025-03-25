@@ -98,8 +98,8 @@ curl -X DELETE http://localhost:5000/api/tasks/12345
 
 | 🖥️ Desktop View | 
 
-![Desktop](frontend/public/Screenshot 2025-03-26 010807.png) 
-![Desktop](frontend/public/Screenshot 2025-03-26 011139.png)
+![Desktop](images/Screenshot 2025-03-26 010807.png) 
+![Desktop](images/Screenshot 2025-03-26 011139.png)
 
 
 
