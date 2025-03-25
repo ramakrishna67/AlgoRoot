@@ -4,10 +4,9 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const taskRoutes = require("./routes/tasks");
 const app = express();
-const Task = require("./models/Task");
 
 // Middleware
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 const connectDb = async () => {
@@ -35,7 +34,7 @@ const connectDb = async () => {
 
 app.use("/api/tasks", taskRoutes);
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, async () => {
   await connectDb();
   console.log(`Server running on port ${PORT}`);
