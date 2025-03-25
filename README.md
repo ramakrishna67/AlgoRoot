@@ -105,36 +105,4 @@ curl -X PATCH -H "Content-Type: application/json" -d '{"completed":true}' http:/
 curl -X DELETE http://localhost:5000/api/tasks/12345
 ```
 
-## 🖼️ Screenshots
-
-| Desktop View | Mobile View |
-| ------------ | ----------- |
-|              |             |
-
-## 🛠️ Troubleshooting
-
-### MongoDB connection issues
-
-```bash
-# Check if MongoDB service is running (Linux/macOS)
-sudo systemctl status mongod
-
-# Start MongoDB service (Linux/macOS)
-sudo systemctl start mongod
-
-# Windows start command
-net start MongoDB
-```
-
-### Port conflicts
-
-```bash
-# Find processes using port 5000
-lsof -i :5000
-
-# Kill process (Linux/macOS)
-kill -9 <PID>
-```
-
-##
 
