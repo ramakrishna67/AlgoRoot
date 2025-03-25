@@ -13,7 +13,9 @@ function App() {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/tasks");
+      const response = await axios.get(
+        "https://algoroot.onrender.com/api/tasks"
+      );
       setTasks(response.data);
     } catch (error) {
       console.error("Error fetching tasks:", error);
@@ -23,7 +25,7 @@ function App() {
   const createTask = async (task) => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/tasks",
+        "https://algoroot.onrender.com/api/tasks",
         task
       );
       setTasks([response.data, ...tasks]);
@@ -35,7 +37,7 @@ function App() {
   const updateTask = async (id, updatedTask) => {
     try {
       const response = await axios.patch(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://algoroot.onrender.com/api/tasks/${id}`,
         updatedTask
       );
       setTasks(tasks.map((task) => (task._id === id ? response.data : task)));
@@ -47,7 +49,7 @@ function App() {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`);
+      await axios.delete(`https://algoroot.onrender.com/api/tasks/${id}`);
       setTasks(tasks.filter((task) => task._id !== id));
     } catch (error) {
       console.error("Error deleting task:", error);
@@ -57,7 +59,7 @@ function App() {
   const toggleComplete = async (id, currentStatus) => {
     try {
       const response = await axios.patch(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://algoroot.onrender.com/api/tasks/${id}`,
         {
           completed: !currentStatus,
         }
